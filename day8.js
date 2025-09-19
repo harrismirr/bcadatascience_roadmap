@@ -1,5 +1,5 @@
 let name = "Harris";
-let age = 20;
+let age = 18;
 let skills = ["HTML","CSS", "JS"];
 console.log("Name:",name);
 console.log("Age:",age);
