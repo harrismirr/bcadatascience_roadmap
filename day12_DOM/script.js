@@ -1,19 +1,15 @@
-// Selecting elements
-let heading=
-document.getElementByld("main-heading"
-);
-let para = document.querySelector(".info");
-let button = 
-document.querySelector("#btn");
+let container = document.getElementById("container");
+let addBtn = document.getElementById("addBtn");
+let removeBtn = document.getElementById("removeBtn");
 
-// Changing text
-heading.textContent = "Hello Harris!";
-para.textContent = "This text was changed with JavaScript!";
-
-//Button action
-button.addEventListener("click", function()
-{
-    heading.textContent = "Button was clicked!";
-    heading.style.color = "red";
+addBtn.addEventListener("click", function() {
+  let box = document.createElement("div");
+  box.className = "box";
+  container.appendChild(box);
 });
 
+removeBtn.addEventListener("click", function() {
+  if (container.lastElementChild) {
+    container.removeChild(container.lastElementChild);
+  }
+});
