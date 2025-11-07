@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Harris Mir — Data Science Portfolio</title>
+
+  <!-- FontAwesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Animated background canvas -->
+  <canvas id="bgCanvas"></canvas>
+
+  <!-- Header -->
+  <header>
+    <div class="nav-inner">
+      <div class="logo"><i class="fa-solid fa-database"></i> Harris<span>Mir</span></div>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#edu">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button id="themeBtn" title="Toggle theme"><i class="fa-solid fa-moon"></i></button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-card">
+      <div class="hero-left">
+        <h1>Hello, I’m <span>Harris Mir</span></h1>
+        <h2 class="typing-text">I’m a <span id="typing">Data Science Enthusiast</span></h2>
+        <p class="lead">BCA (Data Science ) — transforming data into insights and useful applications.</p>
+        <div class="hero-ctas">
+          <a class="btn" href="#projects">View Projects</a>
+          <a class="btn btn-outline" href="#contact">Contact</a>
+        </div>
+        <div class="socials">
+          <a href="#" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#" title="GitHub"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <!-- 3D-style placeholder (no profile pic) -->
+        <div class="profile-3d">
+          <div class="initials">HM</div>
+          <div class="glow"></div>
+        </div>
+        <div class="summary">
+          <div class="sum card">🎓 <strong>BCA</strong><span>Data Science</span></div>
+          <div class="sum card">🧠 <strong>Focus</strong><span>ML & Visualization</span></div>
+          <div class="sum card">💡 <strong>Mindset</strong><span>Problem Solver</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p class="lead">
+        I'm <strong>Harris Mir</strong>, a BCA student specializing in <strong>Data Science</strong> and
+         I love converting raw data to actionable insights using
+        Python and visualization tools, and building small interactive apps to demonstrate analysis.
+      </p>
+      <p>
+        My focus areas: <strong>Machine Learning, Data Visualization, Statistical Analysis</strong> and
+        a bit of front-end for dashboards (HTML/CSS/JS). I enjoy learning new algorithms and making
+        projects that help learn and solve problems.
+      </p>
+
+      <div class="about-grid">
+        <div class="about-left">
+          <h3>What I do</h3>
+          <ul>
+            <li><i class="fa-solid fa-circle-check"></i> Data cleaning & exploratory analysis (Pandas)</li>
+            <li><i class="fa-solid fa-circle-check"></i> Visualization (Matplotlib / Seaborn / Chart.js)</li>
+            <li><i class="fa-solid fa-circle-check"></i> Small ML models & evaluation</li>
+          </ul>
+          <a class="btn" href="#" target="_blank">Download Resume</a>
+        </div>
+        <div class="about-right">
+          <div class="feature-card">
+            <h4>Recent Projects</h4>
+            <ol>
+              <li>Student Data Analyzer (Pandas + Matplotlib)</li>
+              <li>Interactive Dashboard (JS + Chart visuals)</li>
+              <li>Typing Speed Tracker & To-Do App (DOM projects)</li>
+            </ol>
+          </div>
+          <div class="feature-card">
+            <h4>Tools</h4>
+            <div class="icons">
+              <i class="fa-brands fa-python" title="Python"></i>
+              <i class="fa-solid fa-database" title="SQL"></i>
+              <i class="fa-solid fa-chart-area" title="Charts"></i>
+              <i class="fa-brands fa-js" title="JavaScript"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section skills">
+    <div class="container">
+      <h2>Skills & Tools</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h4>Python</h4>
+          <div class="bar"><div class="fill" data-percent="90"></div></div>
+        </div>
+        <div class="skill-card">
+          <h4>Data Visualization</h4>
+          <div class="bar"><div class="fill" data-percent="85"></div></div>
+        </div>
+        <div class="skill-card">
+          <h4>Machine Learning</h4>
+          <div class="bar"><div class="fill" data-percent="78"></div></div>
+        </div>
+        <div class="skill-card">
+          <h4>SQL & Databases</h4>
+          <div class="bar"><div class="fill" data-percent="80"></div></div>
+        </div>
+        <div class="skill-card">
+          <h4>JavaScript</h4>
+          <div class="bar"><div class="fill" data-percent="70"></div></div>
+        </div>
+        <div class="skill-card">
+          <h4>HTML & CSS</h4>
+          <div class="bar"><div class="fill" data-percent="75"></div></div>
+        </div>
+      </div>
+
+      <div class="graph-wrap">
+        <h3>Sample Analytics (Live Demo)</h3>
+        <svg id="miniChart" width="100%" height="160" viewBox="0 0 600 160" preserveAspectRatio="xMinYMin meet"></svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Student Data Analyzer</h3>
+          <p>Python-based analysis with charts and insights on student performance.</p>
+        </div>
+        <div class="project-card">
+          <h3>Interactive Dashboard</h3>
+          <p>JS dashboard showing charts and filters for datasets.</p>
+        </div>
+        <div class="project-card">
+          <h3>Typing & To-Do Apps</h3>
+          <p>Front-end DOM projects to show interactive JS skills.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="edu" class="section edu">
+    <div class="container">
+      <h2>Education & Roadmap</h2>
+      <div class="edu-grid">
+        <div class="edu-card">
+          <h4>BCA — Data Science </h4>
+          <p>Current — coursework in programming, statistics, and data analysis.</p>
+        </div>
+        <div class="edu-card">
+          <h4>Roadmap Progress</h4>
+          <p>Completed DOM projects (Day 1–14), moving into data visualization & ML basics.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <form id="contactForm">
+        <div class="form-row">
+          <input id="name" type="text" placeholder="Your name" required />
+          <input id="email" type="email" placeholder="Your email" required />
+        </div>
+        <textarea id="message" placeholder="Your message" required></textarea>
+        <div class="form-actions">
+          <button type="submit" class="btn">Send Message</button>
+          <button type="button" id="saveNote" class="btn btn-outline">Save Note (Local)</button>
+        </div>
+        <p class="small">Saved notes are stored locally in your browser (developer tool → Application → Local Storage).</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container f-inner">
+      <p>© 2025 Harris Mir • All Rights Reserved</p>
+      <div class="social">
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
