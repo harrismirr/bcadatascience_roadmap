@@ -1,0 +1,21 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #eee;
+    text-align: center;
+    padding: 20px;
+}
+
+#card {
+    width: 250px;
+    background: white;
+    padding: 20px;
+    margin: 30px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+}
+
+img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
