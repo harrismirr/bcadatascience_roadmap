@@ -1,3 +1,4 @@
+#chapter2 variables and data types
 #write a program to add two numbers 
 #1 type 
 a = 10

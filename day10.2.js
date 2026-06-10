@@ -5,7 +5,7 @@ let result = addNumbers(7,5);
 console.log("sum is:",result);
 
 
-const multiply = (a,b) => {
+const multiply = (a,b) => {       
     return a*b;
 }
 let product = multiply(4,6);

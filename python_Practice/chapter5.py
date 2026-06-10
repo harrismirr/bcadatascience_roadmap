@@ -1,3 +1,4 @@
+#chapter 5 dictionary and sets
 #create a dictionary of hindi words with their english translation and allow user to look it up 
 words = {
     "pani":"water",
@@ -91,3 +92,15 @@ fav_lang["harris"]="java"
 fav_lang["ali"]="c++"
 print(fav_lang)
 #in this case ali ka python will be replaced with c++ so the output will be ali c++ and harris python 
+#more two questions theory based 
+#completed 
+
+
+
+
+
+
+
+
+
+

@@ -1,3 +1,4 @@
+#chapter4 lists and tuples
 #write a program to store seven fruits in a list enetered by an user
 fruits =[]
 f1 = input("Enter fruit 1:")
@@ -81,3 +82,4 @@ print(a.count(0))
 #output is 3 because the 0 occurs 3 times
 
 
+#completed 

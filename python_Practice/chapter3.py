@@ -1,3 +1,4 @@
+# chapter3 strings
 #strings (anything which is inside commas or double commas are strings) 
 #write a program to display a user entered name followed by good afternoon
 name = input("Enter your name:")
